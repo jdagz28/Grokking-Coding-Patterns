@@ -61,7 +61,7 @@ int main()
 ```
 
 #### Time Complexity
-- **O(N × K):**  
+- $O(N \cdot K)$
   For each element of the array, we iterate through the next `K` elements.
 
 ---
@@ -129,11 +129,11 @@ int main()
 ```
 
 #### Time Complexity
-- **O(N):**  
+- $O(N):$  
   We iterate through the array once.
 
 #### Space Complexity
-- **O(N):**  
+- $O(N):$
   For storing the result.
 
 ---
@@ -147,4 +147,18 @@ In some problems, the window size is not fixed. We may need to:
 We will explore such examples in subsequent chapters.
 
 ---
+## Problems
 
+| Index | Problem Name                                             | Link                                                               | LeetCode                                                                                   |
+|-------|----------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| 0     | Maximum Subarray                                         | [Link](./Maximum%20Sum%20Subarray%20of%20Size%20K/)               | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                              |
+| 1     | Minimum Size Subarray Sum                                |                                                                    | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)            |
+| 2     | Longest Substring with At Most K Distinct Characters      |                                                                    | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |
+| 3     | Fruit Into Baskets                                       |                                                                    | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)                          |
+| 4     | Longest Substring Without Repeating Characters           |                                                                    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)        |
+| 5     | Longest Repeating Character Replacement                  |                                                                    | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                      |
+| 6     | Max Consecutive Ones III                                 |                                                                    | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)              |
+| 7     | Permutation in String                                    |                                                                    | [Permutation in String](https://leetcode.com/problems/permutation-in-string/)                   |
+| 8     | Find All Anagrams in a String                            |                                                                    | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)    |
+| 9     | Minimum Window Substring                                 |                                                                    | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)              |
+| 10    | Substring with Concatenation of All Words                |                                                                    | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)                  |
