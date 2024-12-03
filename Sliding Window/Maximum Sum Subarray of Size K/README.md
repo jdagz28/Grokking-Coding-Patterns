@@ -168,8 +168,8 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
 #### Constraints:
 
-- \(1 \leq \text{nums.length} \leq 10^5\)
-- \(-10^4 \leq \text{nums[i]} \leq 10^4\)
+- 1 ≤ nums.length ≤ 10⁵
+- -10⁴ ≤ nums[i] ≤ 10⁴
 
 **The sliding window algorithm is not optimal for this problem given that subarray sizes are not given.**
 

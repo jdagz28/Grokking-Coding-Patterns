@@ -20,7 +20,7 @@ int findMaxSumSubArray(int k, const std::vector<int> &arr)
     return (maxSum);
 }
 
-void printArray(const std::vector<int> &arr)
+void printVector(const std::vector<int> &arr)
 {
     if (arr.empty())
     {
@@ -44,11 +44,11 @@ int main()
     std::vector<int> ex1 = {2, 1, 5, 1, 3, 2};
     std::vector<int> ex2 = {2, 3, 4, 1, 5};
     
-    printArray(ex1);
+    printVector(ex1);
     std::cout << "Maximum sum of a subarray of size 3: "; 
     std::cout << findMaxSumSubArray(3, ex1) << std::endl << std::endl;
 
-    printArray(ex2);
+    printVector(ex2);
     std::cout << "Maximum sum of a subarray of size 2: "; 
     std::cout << findMaxSumSubArray(2, ex2) << std::endl;
     return (0);
