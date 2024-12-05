@@ -38,7 +38,7 @@ Explanation: The longest substrings with no more than '3' distinct characters ar
         - Extend the window by including the next character.
         - Check if the number of distinct characters in the HashMap exceeds `K`.
 
-1. **Shrink the Window to Optimize**:
+4. **Shrink the Window to Optimize**:
     - If there are more than `K` distinct characters, shrink the window from the left:
     - For every step of shrinking:
         - Decrement the frequency of the character going out of the window.
@@ -46,7 +46,7 @@ Explanation: The longest substrings with no more than '3' distinct characters ar
         - Check if you still have no more than `K` distinct characters.
     - After shrinking, compare the current window's length to the longest recorded length so far, and update it if the current one is longer.
 
-2. **Repeat the Process**:
+5. **Repeat the Process**:
    - Continue extending and shrinking the window across the entire string, always striving to maintain and record the longest valid window.
 
 <div align="center">
