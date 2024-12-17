@@ -36,40 +36,6 @@ int findMaxSumSubArray(int k, const std::vector<int> &arr)
     }
     return (maxSum);
 }
-
-void printVector(const std::vector<int> &arr)
-{
-    if (arr.empty())
-    {
-        std::cout << "{}" << std::endl;
-        return;
-    }
-    
-    std::vector<int>::const_iterator it;
-    std::cout << "{ ";
-    for (it = arr.begin(); it != arr.end(); it++)
-    {
-        std::cout << *it;
-        if (it != arr.end() - 1) 
-            std::cout << ", ";
-    }
-    std::cout << " }" << std::endl;
-}
-
-int main()
-{
-    std::vector<int> ex1 = {2, 1, 5, 1, 3, 2};
-    std::vector<int> ex2 = {2, 3, 4, 1, 5};
-    
-    printVector(ex1);
-    std::cout << "Maximum sum of a subarray of size 3: "; 
-    std::cout << findMaxSumSubArray(3, ex1) << std::endl << std::endl;
-
-    printVector(ex2);
-    std::cout << "Maximum sum of a subarray of size 2: "; 
-    std::cout << findMaxSumSubArray(2, ex2) << std::endl;
-    return (0);
-}
 ```
 
 #### Time Complexity
@@ -102,40 +68,6 @@ int findMaxSumSubArray(int k, const std::vector<int> &arr)
         }
     }
     return (maxSum);
-}
-
-void printVector(const std::vector<int> &arr)
-{
-    if (arr.empty())
-    {
-        std::cout << "{}" << std::endl;
-        return;
-    }
-    
-    std::vector<int>::const_iterator it;
-    std::cout << "{ ";
-    for (it = arr.begin(); it != arr.end(); it++)
-    {
-        std::cout << *it;
-        if (it != arr.end() - 1) 
-            std::cout << ", ";
-    }
-    std::cout << " }" << std::endl;
-}
-
-int main()
-{
-    std::vector<int> ex1 = {2, 1, 5, 1, 3, 2};
-    std::vector<int> ex2 = {2, 3, 4, 1, 5};
-    
-    printVector(ex1);
-    std::cout << "Maximum sum of a subarray of size 3: "; 
-    std::cout << findMaxSumSubArray(3, ex1) << std::endl << std::endl;
-
-    printVector(ex2);
-    std::cout << "Maximum sum of a subarray of size 2: "; 
-    std::cout << findMaxSumSubArray(2, ex2) << std::endl;
-    return (0);
 }
 ```
 
@@ -196,23 +128,4 @@ class Solution
             return (maxSum);
         }
 };
-
-int main()
-{
-    Solution solution;
-
-    std::vector<int> nums1 = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    std::cout << "Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]" << std::endl;
-    std::cout << "Output: " << solution.maxSubArray(nums1) << std::endl << std::endl; 
-
-    std::vector<int> nums2 = {1};
-    std::cout << "Input: nums = [1]" << std::endl;
-    std::cout << "Output: " << solution.maxSubArray(nums2) << std::endl << std::endl; 
-
-    std::vector<int> nums3 = {5, 4, -1, 7, 8};
-    std::cout << "Input: nums = [5, 4, -1, 7, 8]" << std::endl;
-    std::cout << "Output: " << solution.maxSubArray(nums3) << std::endl << std::endl; 
-
-    return (0);
-}
 ```
